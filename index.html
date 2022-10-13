@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonzalo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="custom.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="_backgroundImage _fontWeight600">
+    
+    <div class="container _containerCentral">
+      <h1 class="text-center">Crea tu evento!</h1>
+      <div class="card _backgroundOpacity">
+        <div class="card-body">
+
+          <div class="container">
+          
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <label for="nombre" class="form-label">Nombre del evento</label>
+                <input type="text" id="nombre" class="form-control form-control-lg">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label for="fecha" class="form-label">Fecha del evento</label>
+                <input type="date" id="fecha" class="form-control form-control-lg">
+              </div>
+            </div>
+  
+            <div class="row">
+              
+              <div class="_padTop10 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label for="mensaje" class="form-label">Mensaje de bienvenida</label>
+                <textarea id="mensaje" rows="11" class="form-control"></textarea>
+              </div>
+
+              <div class="_padTop10 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label for="portada" class="form-label">Agregar foto de portada</label>
+                <input class="form-control form-control-sm" id="portada" type="file">
+              </div>
+
+              <div class="_padTop10 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label class="form-label">Información bancaria</label>
+                
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      
+                      <label class="form-label _infoMessage">Seleccione la cuenta bancaria donde se depositarán los regalos</label>
+                      
+                      <div class="_padTop10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <label for="banco" class="form-label _fontSize13">Banco</label>
+                        <select class="form-select form-select-sm">
+                          <option disabled selected>Seleccione...</option>
+                          <option value="BCP">BCP</option>
+                          <option value="Internank">Internank</option>
+                          <option value="BBVA">BBVA</option>
+                          <option value="Scotiabank">Scotiabank</option>
+                        </select>
+                      </div>
+
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <label for="cuenta" class="form-label _fontSize13">Número de cuenta</label>
+                        <input type="text" id="cuenta" class="form-control form-control-sm">
+                      </div>
+
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <label for="CCI" class="form-label _fontSize13">Número de cuenta interbancario</label>
+                        <input type="text" id="CCI" class="form-control form-control-sm">
+                      </div>
+
+                    </div>
+                  </div>                  
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="_padTop10 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button type="button" class="_textButton col-white btn btn-info btn-lg">Crear evento</button>
+              </div>
+            </div>
+  
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
